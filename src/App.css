@@ -171,14 +171,13 @@ a {
   cursor: pointer;
 }
 .btn-default {
-  margin-left: 10px;
   width: 100%;
   border: none;
   background: var(--main);
   color: var(--white);
   outline: none;
   font-size: 18px;
-  text-transform: uppercase;
+
   cursor: pointer;
 }
 .details__p {
@@ -290,4 +289,36 @@ a {
   .details__image {
     padding-right: 0;
   }
+}
+.signup {
+  width: 365px;
+}
+.sign {
+  width: 100%;
+  margin-top: 25px;
+  background-color: #e50914;
+  border-color: #e50914;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading {
+  display: flex;
+  color: white;
+}
+.logout-btn {
+  border: none;
+  background-color: white;
+  font-weight: 900;
+  font-size: 20px;
+  color: lightgrey;
+}
+.logout-btn:hover {
+  color: black;
 }

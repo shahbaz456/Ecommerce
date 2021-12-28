@@ -6,6 +6,8 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Cart from "./components/Cart";
 import Details from "./components/Details";
+import Signinpage from "./components/Signinpage";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
 
         <Route path="/" exact component={Home} />
         <Route path="/cart" exact component={Cart} />
+        <Route path="/Signin" exact component={Signinpage} />
         <Route path="/details/:id" exact component={Details} />
       </Provider>
     </Router>

@@ -8,6 +8,7 @@ const ProductsReducer = (state = initState, action) => {
         ...state,
         products: action.payload,
       };
+
     default:
       return state;
   }

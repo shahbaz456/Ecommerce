@@ -1,4 +1,18 @@
-export const getAllProducts = async (body) => {
+export const getAllCategories = async (body) => {
+  try {
+    const result = await fetch("https://fakestoreapi.com/products/categories", {
+      method: "GET",
+    });
+    const response = await result.json();
+    console.log("show data", response);
+
+    return response;
+  } catch (error) {
+    console.warn(error);
+  }
+};
+
+export const getAllProducts = async () => {
   try {
     const result = await fetch("https://fakestoreapi.com/products", {
       method: "GET",
@@ -12,19 +26,19 @@ export const getAllProducts = async (body) => {
   }
 };
 
-export const getSingleProduct = async (id) => {
-  try {
-    const result = await fetch(`https://fakestoreapi.com/products${id}`, {
-      method: "GET",
-    });
-    const response = await result.json();
-    console.log("show data", response);
+// export const getSingleProduct = async (id) => {
+//   try {
+//     const result = await fetch(`https://fakestoreapi.com/products${id}`, {
+//       method: "GET",
+//     });
+//     const response = await result.json();
+//     console.log("show data", response);
 
-    return response;
-  } catch (error) {
-    console.warn(error);
-  }
-};
+//     return response;
+//   } catch (error) {
+//     console.warn(error);
+//   }
+// };
 
 export const sortProduct = async (body) => {
   try {
